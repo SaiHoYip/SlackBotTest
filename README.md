@@ -16,4 +16,4 @@ Feel free to make a pull request with any suggestions.
 <ol>explanation of the feature/api</ol>
 
 <h2> Contact Me <h2>
-  saiho.yip@gmail.com
+  <ol>saiho.yip@gmail.com</ol>
