@@ -15,5 +15,5 @@ Feel free to make a pull request with any suggestions.
 <ol>any api's that might be useful with your suggestion </ol>
 <ol>explanation of the feature/api</ol>
 
-<h2> Contact Me <h2>
-  <ol>saiho.yip@gmail.com</ol>
+<h2> Contact Me </h2>
+  <ol> Email: saiho.yip@gmail.com</ol>
