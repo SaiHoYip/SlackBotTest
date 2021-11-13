@@ -1,6 +1,9 @@
 # SlackBotTest
-Playing around with the slack api for learning purposes and getting people
+Playing around with the slack api for learning purposes and getting people to contribute
 
+Reason for this Project:
+  Bots are very versatile and they are only as useful as the programmer makes them! You can do almost anything with a bot as long as you code them to do so.
+  
 Contribute:
 <h2> Have An Idea for features to add to the bot?: </h2>
 <p> 
