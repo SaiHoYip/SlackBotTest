@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from flask import Flask, request, Response
 from slackeventsapi import SlackEventAdapter
 import weatherAPI
+import JokeApi
 
 env_path = Path('.')/ '.env'
 load_dotenv(dotenv_path= env_path)
@@ -74,6 +75,7 @@ def send_welcome(channel,user):
     welcome.timestamp = response['ts']
 
     welcome_message[channel][user] = welcome
+
 app = Flask(__name__)
 slack_event_adapter = SlackEventAdapter(os.environ['SIGNING_SECRET'],'/slack/events', app)
 
@@ -121,5 +123,10 @@ def message_count():
 @app.route('/weather', methods = ['POST'])
 def weather():
     return weatherAPI.weather()
+
+@app.route('/joke', methods = ['POST'])
+def jokeAPI():
+    return JokeApi.jokes()
+
 if __name__=="__main__":
     app.run(debug=True)
