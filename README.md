@@ -14,3 +14,15 @@ Feel free to make a pull request with any suggestions.
 </p>
 <ol>any api's that might be useful with your suggestion </ol>
 <ol>explanation of the feature/api</ol>
+
+<p>Slash commands</p>
+<p>
+/joke
+Tells a random joke
+</p>
+<p>
+/weather
+Gets the info on weather for NY and 
+</p>
+
+<h1> Plans </p>
