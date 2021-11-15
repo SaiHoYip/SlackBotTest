@@ -6,6 +6,7 @@ from flask import Flask, request, Response
 from slackeventsapi import SlackEventAdapter
 import weatherAPI
 import JokeApi
+import attendence
 
 env_path = Path('.')/ '.env'
 load_dotenv(dotenv_path= env_path)
@@ -87,24 +88,6 @@ def message(payload):
             message_counts[user_id] = 1
         if text.lower() == 'start':
             send_welcome(f'@{user_id}', user_id)
-        elif text.lower() == 'checkin':
-            client.chat_postMessage(channel=channel_id, text=f"Attendence taken")
-
-#WIP
-@ slack_event_adapter.on('reaction_added')
-def reaction(payload):
-    event = payload.get('event', {})
-    channel_id = event.get('item', {}).get('channel')
-    user_id = event.get('user')
-
-    if f'@{user_id}' not in welcome_message:
-        return
-    welcome = welcome_message[f'@{user_id}'][user_id]
-    welcome.completed = True
-    welcome.channel = channel_id
-    message = welcome.get_message()
-    updated_message = client.chat_update(**message)
-    welcome.timestamp = updated_message['ts']
 
 @app.route('/message-count', methods= ['POST'])
 def message_count():
@@ -120,8 +103,9 @@ def checker():
     data = request.form
     user_id = data.get('user_id')
     channel_id = data.get('channel_id')
-    client.chat_postMessage(channel=channel_id, text=f"hello")
+    client.chat_postMessage(channel=channel_id, text=f"Message")
     return Response(), 200
+
 @app.route('/weather', methods = ['POST'])
 def weather():
     return weatherAPI.weather()
