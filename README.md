@@ -10,7 +10,7 @@ Contribute:
 Feel free to make raise a issue with any suggestions.
 </p>
 <p>
-  Include the following and as much detail as possible.
+  Include the following if possible and as much detail as possible.
 </p>
 <ol>- any api's that might be useful with your suggestion </ol>
 <ol>- explanation of the feature/api</ol>
