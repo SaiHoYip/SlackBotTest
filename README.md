@@ -7,7 +7,7 @@ Reason for this Project:
 Contribute:
 <h2> Have An Idea for features to add to the bot?: </h2>
 <p> 
-Feel free to make a pull request with any suggestions.
+Feel free to make raise a issue with any suggestions.
 </p>
 <p>
   Include the following.
