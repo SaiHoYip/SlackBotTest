@@ -12,8 +12,8 @@ Feel free to make a pull request with any suggestions.
 <p>
   Include the following.
 </p>
-<ol>any api's that might be useful with your suggestion </ol>
-<ol>explanation of the feature/api</ol>
+<ol>- any api's that might be useful with your suggestion </ol>
+<ol>- explanation of the feature/api</ol>
 
 
 <h2>Slash commands</h2>
