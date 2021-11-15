@@ -10,11 +10,11 @@ Contribute:
 Feel free to make raise a issue with any suggestions.
 </p>
 <p>
-  Include the following.
+  Include the following and as much detail as possible.
 </p>
 <ol>- any api's that might be useful with your suggestion </ol>
 <ol>- explanation of the feature/api</ol>
-
+<ol>- include links
 
 <h2>Slash commands</h2>
 <p>
