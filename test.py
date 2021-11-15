@@ -50,19 +50,13 @@ class GreetingMessage:
                 self._get_reaction_task()
             ]
         }
+
     def _get_reaction_task(self):
         checkmark = ':white_check_mark:'
         if not self.completed:
             checkmark = ':white_large_square:'
         text = f'{checkmark} *React*'
         return {'type': 'section', 'text': {'type': 'mrkdwn', 'text': text}}
-    
-#Simple Hello Message
-def Hello(channel_id, text):
-    if text == "fu":
-        client.chat_postMessage(channel= channel_id, text="no cursing")
-    else:
-        client.chat_postMessage(channel= channel_id, text=text)
 
 def send_welcome(channel,user):
 
@@ -93,7 +87,8 @@ def message(payload):
             message_counts[user_id] = 1
         if text.lower() == 'start':
             send_welcome(f'@{user_id}', user_id)
-        
+        elif text.lower() == 'checkin':
+            client.chat_postMessage(channel=channel_id, text=f"Attendence taken")
 
 #WIP
 @ slack_event_adapter.on('reaction_added')
@@ -120,6 +115,13 @@ def message_count():
     client.chat_postMessage(channel=channel_id, text=f"Message:{message_count}")
     return Response(), 200
 
+@app.route('/checkin', methods= ['POST'])
+def checker():
+    data = request.form
+    user_id = data.get('user_id')
+    channel_id = data.get('channel_id')
+    client.chat_postMessage(channel=channel_id, text=f"hello")
+    return Response(), 200
 @app.route('/weather', methods = ['POST'])
 def weather():
     return weatherAPI.weather()
