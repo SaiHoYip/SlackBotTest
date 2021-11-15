@@ -18,17 +18,17 @@ Feel free to make a pull request with any suggestions.
 
 <h2>Slash commands</h2>
 <p>
-/joke
+- /joke
 Tells a random joke
 </p>
 <p>
-/weather
+- /weather
 Gets the info on weather for NY and 
 </p>
 <p>
-/message-count
+- /message-count
 counts the amount of messages the user has sent 
 </p>
 <h1> Plans </h1>
-<ol> Work on the weather function so that it can take in a location as a parameter instead of just giving the weather for one location. </ol>
-<ol> Add more functions! </ol>
+<ol> - Work on the weather function so that it can take in a location as a parameter instead of just giving the weather for one location. </ol>
+<ol> - Add more functions! </ol>
