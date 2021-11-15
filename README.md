@@ -14,7 +14,7 @@ Feel free to make raise a issue with any suggestions.
 </p>
 <ol>- any api's that might be useful with your suggestion </ol>
 <ol>- explanation of the feature/api</ol>
-<ol>- include links
+<ol>- include links </ol>
 
 <h2>Slash commands</h2>
 <p>
