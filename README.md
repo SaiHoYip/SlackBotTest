@@ -15,7 +15,8 @@ Feel free to make a pull request with any suggestions.
 <ol>any api's that might be useful with your suggestion </ol>
 <ol>explanation of the feature/api</ol>
 
-<p>Slash commands</p>
+
+<h2>Slash commands</h2>
 <p>
 /joke
 Tells a random joke
@@ -25,4 +26,4 @@ Tells a random joke
 Gets the info on weather for NY and 
 </p>
 
-<h1> Plans </p>
+<h1> Plans </h1>
