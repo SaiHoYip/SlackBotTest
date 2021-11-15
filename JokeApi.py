@@ -4,11 +4,14 @@ from dotenv import load_dotenv
 import requests
 import json
 
-def joke():
-    #https://github.com/sameerkumar18/geek-joke-api
-    url = 'https://geek-jokes.sameerkumar.website/api?format=json'
+#https://jokeapi.dev/
+def jokes():
+    url = 'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit'
     api_request = requests.get(url)
     data = json.loads(api_request.text)
-    return data['joke']
+    if 'joke' in data:
+        return data['joke']
+    else: 
+        return data['setup'], data['delivery']
 
-print(joke())
+print(jokes())
