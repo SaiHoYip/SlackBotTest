@@ -7,5 +7,3 @@ def coffeePic():
     api_request = requests.get(url)
     data = json.loads(api_request.text)
     return data['file']
-
-print(coffeePic())
