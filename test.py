@@ -7,6 +7,7 @@ from slackeventsapi import SlackEventAdapter
 import weatherAPI
 import JokeApi
 import attendence
+import CoffeeAPI
 
 env_path = Path('.')/ '.env'
 load_dotenv(dotenv_path= env_path)
@@ -113,6 +114,10 @@ def weather():
 @app.route('/joke', methods = ['POST'])
 def jokeAPI():
     return JokeApi.jokes()
+
+@app.route('/coffee', methods = ['POST'])
+def COFFEEAPI():
+    return CoffeeAPI.coffeePic()
 
 if __name__=="__main__":
     app.run(debug=True)
