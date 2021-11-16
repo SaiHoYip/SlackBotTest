@@ -16,6 +16,11 @@ Feel free to make raise a issue with any suggestions.
 <ol>- explanation of the feature/api</ol>
 <ol>- include links </ol>
 
+<p> If you would like to add a feature include the following... </p>
+  <ol>- explain the feature </p> 
+  <ol>- include links of what you used like api's </p>
+  <ol>- any modules/frameworks if any </p>
+
 <h2>Slash commands</h2>
 <p>
 - /joke
