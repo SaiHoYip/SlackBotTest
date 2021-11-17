@@ -9,7 +9,6 @@ import JokeApi
 import attendence
 import CoffeeAPI
 import DogAPI
-import newton_formula
 
 env_path = Path('.')/ '.env'
 load_dotenv(dotenv_path= env_path)
@@ -111,7 +110,9 @@ def checker():
 
 @app.route('/weather', methods = ['POST'])
 def weather():
-    return weatherAPI.weather()
+    data = request.form
+    text = data.get('text')
+    return weatherAPI.weather(text)
 
 @app.route('/joke', methods = ['POST'])
 def jokeAPI():
@@ -124,10 +125,6 @@ def COFFEEAPI():
 @app.route('/dog', methods = ['POST'])
 def DOGAPI():
     return DogAPI.dogPic()
-
-@app.route('/newton', methods =['POST'])
-def NEWTONAPI():
-    return NEWTONAPI.newton_formula()
 
 if __name__=="__main__":
     app.run(debug=True)
