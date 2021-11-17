@@ -29,8 +29,8 @@ Feel free to make raise a issue with any suggestions.
 Tells a random joke
 </p>
 <p>
-- /weather
-Gets the info on weather for NY and 
+- /weather <parameter>
+Gets the info on weather utilizing the weather api to give you the temperature of a specified location 
 </p>
 <p>
 - /message-count
