@@ -41,7 +41,6 @@ counts the amount of messages the user has sent
   Sends you a link to a random picture of coffee
 </p>
 <h1> Plans </h1>
-<ol> - Work on the weather function so that it can take in a location as a parameter instead of just giving the weather for one location. </ol>
 <ol> - Add more functions! </ol>
 
 <h2>Tools Being Used</h2>
