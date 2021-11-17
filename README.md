@@ -45,4 +45,4 @@ counts the amount of messages the user has sent
 <ol> - Add more functions! </ol>
 
 <h2>Tools Being Used</h2>
-<ol>GitHub for Slack: https://github.com/integrations/slack</ol>
+<ol> - GitHub for Slack: https://github.com/integrations/slack</ol>
