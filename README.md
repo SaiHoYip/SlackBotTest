@@ -44,5 +44,5 @@ counts the amount of messages the user has sent
 <ol> - Work on the weather function so that it can take in a location as a parameter instead of just giving the weather for one location. </ol>
 <ol> - Add more functions! </ol>
 
-Tools Being Used
-GitHub for Slack: https://github.com/integrations/slack
+<h2>Tools Being Used</h2>
+<p>GitHub for Slack: https://github.com/integrations/slack</p>
