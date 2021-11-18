@@ -2,3 +2,4 @@ slackeventsapi
 Flask
 slack
 pip install python-dotenv
+pip install slackclient
