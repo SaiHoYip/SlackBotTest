@@ -40,6 +40,10 @@ counts the amount of messages the user has sent
 - /coffee
   Sends you a link to a random picture of coffee
 </p>
+<p>
+- /define <word>
+  Defines a word using a dictionary api
+</p>
 <h1> Plans </h1>
 <ol> - Add more functions! </ol>
 
