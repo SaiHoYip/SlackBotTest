@@ -9,6 +9,7 @@ import JokeApi
 import attendence
 import CoffeeAPI
 import DogAPI
+import Dictionary
 
 env_path = Path('.')/ '.env'
 load_dotenv(dotenv_path= env_path)
@@ -113,6 +114,12 @@ def weather():
     data = request.form
     text = data.get('text')
     return weatherAPI.weather(text)
+
+@app.route('/define', methods = ['POST'])
+def dictionary():
+    data = request.form
+    text = data.get('text')
+    return Dictionary.dictionary(text)
 
 @app.route('/joke', methods = ['POST'])
 def jokeAPI():
