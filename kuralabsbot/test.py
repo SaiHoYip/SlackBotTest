@@ -92,7 +92,7 @@ def Quizzes():
     data = request.form
     user_id = data.get('user_id')
     channel_id = data.get('channel_id')
-    client.chat_postMessage(channel=channel_id, text='hey')
-    return Response(), 200
+    return SampleQuestions.runQ()
+
 if __name__=="__main__":
     app.run(debug=True)
