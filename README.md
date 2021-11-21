@@ -44,8 +44,10 @@ counts the amount of messages the user has sent
 - /define <word>
   Defines a word using a dictionary api
 </p>
-<h1> Plans </h1>
-<ol> - Add more functions! </ol>
+<p>
+- /arithmatic <expression>
+  Does some complex math operation using supplied expression
+</p>
 
 <h2>Tools Being Used</h2>
 <ol> - GitHub for Slack: https://github.com/integrations/slack</ol>
