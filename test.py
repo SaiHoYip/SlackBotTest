@@ -10,6 +10,7 @@ import attendence
 import CoffeeAPI
 import DogAPI
 import Dictionary
+import NewtonAPi
 
 env_path = Path('.')/ '.env'
 load_dotenv(dotenv_path= env_path)
@@ -132,6 +133,12 @@ def COFFEEAPI():
 @app.route('/dog', methods = ['POST'])
 def DOGAPI():
     return DogAPI.dogPic()
+
+@app.route('/arithmatic', methods = ['POST'])
+def NEWTONAPI():
+    data = request.form
+    text = data.get('text')
+    return NewtonAPi.newton(text)
 
 if __name__=="__main__":
     app.run(debug=True)
