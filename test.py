@@ -132,7 +132,12 @@ def COFFEEAPI():
 
 @app.route('/dog', methods = ['POST'])
 def DOGAPI():
-    return DogAPI.dogPic()
+    data = request.form
+    channel_id = data.get('channel_id')
+    user_id = data.get('user_id')
+    image_url = DogAPI.dogPic()
+    client.chat_postMessage(channel=channel_id, text = " ", attachments=[{"title": "Dog", "image_url": image_url}])
+    return Response(), 200
 
 @app.route('/arithmatic', methods = ['POST'])
 def NEWTONAPI():
